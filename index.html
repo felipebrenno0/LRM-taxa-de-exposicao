@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRM</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+    <h1>LRM - Método taxa de exposição</h1>
+    <div class="tempo">
+        <p>Tempo por inspeção (segundos):</p>
+        <input id="tempo-inpecao" type="number" value="4" >
+    </div>
+
+    <div class="dose">
+        <p>Taxa de exposição por passagem (µSv/h)</p>
+        <div class="container-taxa">
+            <div class="taxa">
+                <input id="taxa" type="number" placeholder="1ª passagem">
+                <input id="taxa" type="number" placeholder="2ª passagem">  
+            </div>
+
+            <div class="taxa">
+                <input id="taxa" type="number" placeholder="3ª passagem">
+                <input id="taxa" type="number" placeholder="4ª passagem">  
+            </div>
+
+            <div class="taxa">
+                <input id="taxa" type="number" placeholder="5ª passagem">  
+            </div>
+            
+        </div>
+
+        <div>
+            <button onclick="ativarBotao()">Calcular</button> 
+        </div>
+        
+        
+    </div>
+
+    <div class="container-resultado">
+    </div>
+
+    <div class="container-icone">
+        <p>Repositório:</p>
+        <a href="#" class="icone" ><i class="devicon-github-original-wordmark colored" ></i></a> 
+    </div>
+   </div>
+    
+
+
+
+    <script defer src="./src/scripts/main.js"></script>
+</body>
+</html>

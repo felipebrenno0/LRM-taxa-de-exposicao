@@ -1,0 +1,117 @@
+body{
+    background-color: #b8cff5;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container > h1{
+    margin: 15px 0px;
+    font-size: 23px;
+}
+
+
+.tempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.tempo > p{
+    margin: 15px 5px;
+    font-weight: bold;
+}
+
+.tempo > input{
+    height: 40px;
+    width: 50px;
+    font-size: 35px;
+    text-align: center;
+    
+}
+
+.dose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dose > p{
+    margin: 10px;
+    font-weight: bold;
+}
+
+.taxa{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.taxa > input{
+    height: 40px;
+    width: 140px;
+    font-size: 40px;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+button{
+    background-color: #3983fb;
+    color: black;
+    border: none;
+    margin: 40px 20px;
+    font-size: 16px;
+    border-radius: 18px;
+    padding: 8px 35px;
+    box-shadow: 2px 4px 11px 0px #000; 
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.resultado{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-icone > p{
+    font-size: 15px;
+}
+
+.icone{
+    font-size: 50px;
+    text-decoration: none;
+    margin: 10px;
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height: 700px) {
+    .icone{
+        position: relative;
+    }
+}
