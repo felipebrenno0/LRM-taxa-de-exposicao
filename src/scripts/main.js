@@ -6,7 +6,7 @@ const tempoInspecao = document.getElementById("tempo-inpecao")
 
 function ativarBotao(){
     
-    const medicoes =  obterTaxas().reduce((x, y)=> x + y)
+    const medicoes =  obterTaxas()
 
     const taxaExposicao = calcularTaxa(medicoes)
     console.log(tempoInspecao.value)
@@ -37,11 +37,12 @@ function calcularTaxa(valoresMedidos){
     return ((taxaMedia / 5) * tempoInspecao.value) / 3600
 }
 
-function obterTaxas(){
+function obterTaxas(taxas){
+    taxas = taxaPassagem
     let valoresTaxas = []
 
-    for(let i = 0; i < taxaPassagem.length; i++){
-        let inputs = taxaPassagem[i].getElementsByTagName("input")
+    for(let i = 0; i < taxas.length; i++){
+        let inputs = taxas[i].getElementsByTagName("input")
         for (let j = 0; j < inputs.length; j++){
             valoresTaxas.push(inputs[j].value)
             
@@ -51,7 +52,7 @@ function obterTaxas(){
         return parseFloat(x)
     })
 
-    return numeros
+    return numeros.reduce((x, y)=> x + y)
 }
 
 function removerElementoAntigo(){
