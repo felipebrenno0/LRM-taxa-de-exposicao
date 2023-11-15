@@ -9,7 +9,6 @@ function ativarBotao(){
     const medicoes =  obterTaxas()
 
     const taxaExposicao = calcularTaxa(medicoes)
-    console.log(tempoInspecao.value)
     imprimirTaxa(taxaExposicao.toFixed(3))
 }
 
