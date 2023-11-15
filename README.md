@@ -2,7 +2,7 @@
 
 Site feito para calcular as medições realizadas no **Levantamento Radiometrico na cabine dos caminhões - Metodo taxa de exposição**
 
-## Resumo do funcionamento do código
+## Resumo de funcionamento do código
 
 1. Ao inserir as medições e apertar o botão calcular, será chamada a função **ativarBotao( )**.
 2. A função **ativarBotao( )** irá declarar uma constante chamada **medicoes** que irá receber a função **obterTaxas( )**.
