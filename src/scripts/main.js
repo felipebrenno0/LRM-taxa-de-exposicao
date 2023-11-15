@@ -2,7 +2,7 @@ const taxaPassagem = document.getElementsByClassName("taxa")
 const resultado = document.querySelector(".container-resultado")
 const tempoInspecao = document.getElementById("tempo-inpecao")
 
-
+const meuInput = document.getElementById("container-taxa");
 
 function ativarBotao(){
     
@@ -60,3 +60,11 @@ function removerElementoAntigo(){
         elementoAntigo.remove()
     }
 }
+
+meuInput.addEventListener("keyup", function(event) {
+    // Verifica se a tecla pressionada é Enter (código 13)
+    if (event.keyCode === 13) {
+      // Chama a função quando Enter é pressionado
+      ativarBotao();
+    }
+  });
