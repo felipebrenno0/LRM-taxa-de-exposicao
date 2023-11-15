@@ -3,6 +3,7 @@ const resultado = document.querySelector(".container-resultado")
 const tempoInspecao = document.getElementById("tempo-inpecao")
 
 const meuInput = document.getElementById("container-taxa");
+const minhaSecao = document.getElementById("resultado")
 
 function ativarBotao(){
     
@@ -10,6 +11,7 @@ function ativarBotao(){
 
     const taxaExposicao = calcularTaxa(medicoes)
     imprimirTaxa(taxaExposicao.toFixed(3))
+    minhaSecao.scrollIntoView()
 }
 
 function imprimirTaxa(taxaExposicao){
